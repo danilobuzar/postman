@@ -1,0 +1,198 @@
+{
+	"id": "f3bfba98-398a-698e-19e5-59cb3ceac4ab",
+	"name": "Avenue Code",
+	"description": "",
+	"order": [
+		"cca92d6d-dd76-16d1-841f-e345cacaf090",
+		"5d57e8bd-5766-3f2e-6b26-0a6cc934033e",
+		"40d69d93-6634-7508-996a-c3be07c9f353",
+		"bb5227fc-bba1-7b13-a6e6-8924f61af2ed",
+		"0d2eef33-b66d-e379-c9a2-46d36ec6e0eb",
+		"2147854c-e6ac-eaa0-1bb9-0f0b9983a5cd"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1511353278956,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0d2eef33-b66d-e379-c9a2-46d36ec6e0eb",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/products/childs/22215c87-f26e-418f-96ec-1db5592c7b66",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "f3bfba98-398a-698e-19e5-59cb3ceac4ab",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get set of child products for specific product ",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511357536118,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "2147854c-e6ac-eaa0-1bb9-0f0b9983a5cd",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/images/22215c87-f26e-418f-96ec-1db5592c7b66",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "f3bfba98-398a-698e-19e5-59cb3ceac4ab",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get set of images for specific product",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511360540060,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "40d69d93-6634-7508-996a-c3be07c9f353",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/products/286a1b5f-aa9c-46df-87ba-0c680db124e1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "f3bfba98-398a-698e-19e5-59cb3ceac4ab",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get all products by Id",
+			"description": "Get all products excluding relationships (child products, images) using specific product identity",
+			"descriptionFormat": "html",
+			"time": 1511354407716,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"id\": \"96ef2d02-a2e5-4816-873b-d4de0bb8406d\",\n\t\"name\": \"Teste Update\"\n}"
+		},
+		{
+			"id": "5d57e8bd-5766-3f2e-6b26-0a6cc934033e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/products/filter?fields=images",
+			"queryParams": [
+				{
+					"key": "fields",
+					"value": "images",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "f3bfba98-398a-698e-19e5-59cb3ceac4ab",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get all products",
+			"description": "Get all products including specified relationships (child product and/or images) ",
+			"descriptionFormat": "html",
+			"time": 1511354295816,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"id\": \"96ef2d02-a2e5-4816-873b-d4de0bb8406d\",\n\t\"name\": \"Teste Insert\",\n\t\"description\": \"Test Description\",\n\t\"type\": \"mobile\"\n}"
+		},
+		{
+			"id": "bb5227fc-bba1-7b13-a6e6-8924f61af2ed",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/products/286a1b5f-aa9c-46df-87ba-0c680db124e1/filter?fields=images",
+			"queryParams": [
+				{
+					"key": "fields",
+					"value": "images",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "f3bfba98-398a-698e-19e5-59cb3ceac4ab",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get all products by id",
+			"description": "Get all products including specified relationships (child product and/or images) using specific product identity ",
+			"descriptionFormat": "html",
+			"time": 1511354627398,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"id\": \"7a7f92ce-0fb5-4a84-a87b-1eaf1912438d\"\n}"
+		},
+		{
+			"id": "cca92d6d-dd76-16d1-841f-e345cacaf090",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/products",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "f3bfba98-398a-698e-19e5-59cb3ceac4ab",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get all products",
+			"description": "Get all products excluding relationships (child products, images) ",
+			"descriptionFormat": "html",
+			"time": 1511354175609,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
